@@ -6,9 +6,10 @@ require 'app/Player'
 require 'app/BoardCase'
 require 'app/Board'
 
-casee = Board.new.show
 
 
-
+b = Board.new 
+b.change_B("x", 0) 
+puts b.array_BoardCase[0].value 
 
  

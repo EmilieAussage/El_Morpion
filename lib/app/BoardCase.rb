@@ -6,6 +6,8 @@ class BoardCase
     @case_id = case_id
   end
 
-  
+  def change_value(new_value)
+    @value = new_value
+  end
 
 end

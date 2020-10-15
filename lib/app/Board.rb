@@ -14,9 +14,15 @@ class Board
    @array_BoardCase = [a_1, a_2, a_3, b_1, b_2, b_3, c_1, c_2, c_3]
   end
 
+  def change_B(new_value, new_Boardcase_position)
+   puts @array_BoardCase[new_Boardcase_position][0].case_id
+
+  end
+
   def play_turn
     puts "Que souhaitez-vous faire ?"
     gets.chomp
+
     #TO DO : une méthode qui :
     #1) demande au bon joueur ce qu'il souhaite faire
     #2) change la BoardCase jouée en fonction de la valeur du joueur (X ou O)
